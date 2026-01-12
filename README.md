@@ -1,0 +1,2 @@
+# mahjong-rankings
+club scores
