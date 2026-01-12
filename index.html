@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahjong Rankings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f4f8;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #1f4e79;
+      background-color: #cfe2f3;
+      padding: 15px;
+      margin: 0 0 20px 0;
+      text-align: center;
+      border: 1px solid #4f81bd;
+      font-size: 24px;
+    }
+    h2 {
+      color: #1f4e79;
+      background-color: #cfe2f3;
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #4f81bd;
+      margin: 0 0 0 0;
+    }
+    .ranking-section {
+      background: white;
+      border-radius: 8px;
+      padding: 0;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .ranking-section table {
+      margin: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0;
+    }
+    th {
+      background-color: #4f81bd;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+      border: 1px solid #4f81bd;
+    }
+    td {
+      padding: 10px;
+      border: 1px solid #a0c0e0;
+      background-color: #dbe5f1;
+      text-align: center;
+    }
+    td.player-name, td.team-name {
+      text-align: left;
+    }
+    tr:hover td {
+      background-color: #c5d9ec;
+    }
+    .flag-emoji {
+      font-size: 1.5em;
+      margin-right: 8px;
+      display: none; /* Hidden by default, shown when flag image fails */
+    }
+    .flag-image {
+      width: 24px;
+      height: 16px;
+      margin-right: 8px;
+      vertical-align: middle;
+      border: 1px solid #ddd;
+    }
+    .rank-1 { color: #B8860B; font-weight: bold; font-size: 1.1em; }
+    .rank-2 { color: #696969; font-weight: bold; font-size: 1.1em; }
+    .rank-3 { color: #8B4513; font-weight: bold; font-size: 1.1em; }
+    .team-logo {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .team-members {
+      font-size: 0.9em;
+      color: #666;
+    }
+    .update-time {
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
+      margin-top: 20px;
+    }
+    .nav-links {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #4f81bd;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mahjong Rankings</h1>
+    <div class="nav-links">
+      <a href="#four-player">4 Player Rankings</a>
+      <a href="#three-player">3 Player Rankings</a>
+      <a href="#team-rankings">Team Rankings</a>
+    </div>
+
+<div id="four-player" class="ranking-section">
+    <h2>4 Player Season Rankings</h2>
+    <table>
+      <thead>
+        <tr><th>Rank</th><th>Player</th><th>Score</th><th>Games</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr></thead><tbody><tr><td class="rank-1">1</td><td class="player-name"><img src="https://rtsoft.com/graphics/flags/png100px/us.png" alt="🇺🇸" class="flag-image" onerror="this.style.display='none'; this.nextSibling.style.display='inline';"><span class="flag-emoji">🇺🇸</span>Tristan</td><td>41.6</td><td>1</td><td>1</td><td></td><td></td><td></td></tr><tr><td class="rank-2">2</td><td class="player-name"><img src="https://rtsoft.com/graphics/flags/png100px/us.png" alt="🇺🇸" class="flag-image" onerror="this.style.display='none'; this.nextSibling.style.display='inline';"><span class="flag-emoji">🇺🇸</span>ovar</td><td>15.6</td><td>1</td><td></td><td>1</td><td></td><td></td></tr><tr><td class="rank-3">3</td><td class="player-name"><img src="https://rtsoft.com/graphics/flags/png100px/us.png" alt="🇺🇸" class="flag-image" onerror="this.style.display='none'; this.nextSibling.style.display='inline';"><span class="flag-emoji">🇺🇸</span>tamorlian</td><td>-18.9</td><td>1</td><td></td><td></td><td>1</td><td></td></tr><tr><td>4</td><td class="player-name"><img src="https://rtsoft.com/graphics/flags/png100px/us.png" alt="🇺🇸" class="flag-image" onerror="this.style.display='none'; this.nextSibling.style.display='inline';"><span class="flag-emoji">🇺🇸</span>Ipomoea</td><td>-39.1</td><td>1</td><td></td><td></td><td></td><td>1</td></tr></tbody></table></div>
+<div id="three-player" class="ranking-section">
+    <h2>3 Player Season Rankings</h2>
+    <table>
+      <thead>
+        <tr><th>Rank</th><th>Player</th><th>Score</th><th>Games</th><th>1st</th><th>2nd</th><th>3rd</th></tr></thead><tbody><tr><td>No games played in this date range yet.</td><td class="player-name"></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+<div id="team-rankings" class="ranking-section">
+    <h2>Team Rankings (4 Player)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Team</th>
+          <th>Members</th>
+          <th>Total Score</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="rank-1">1</td>
+        <td class="team-name"><img src="https://mastodos-media.y-zu.org/accounts/avatars/110/672/728/040/508/212/original/0533281fe214fcc1.jpg" class="team-logo" alt="" style="width:30px; height:30px; margin-right:10px; vertical-align:middle; border-radius:4px;">Team C2</td>
+        <td class="team-members"></td>
+        <td>-42.4</td>
+      </tr>
+    </tbody></table></div>
+
+    <div class="update-time">
+      Last updated: 1/13/2026, 3:32:07 AM
+    </div>
+  </div>
+</body>
+</html>
